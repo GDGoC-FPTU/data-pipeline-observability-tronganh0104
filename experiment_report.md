@@ -17,9 +17,9 @@ Chạy `agent_simulation.py` với 2 bộ dữ liệu và ghi lại kết quả:
 
 ---
 
-## 2. Phân tích & nhận xét
+## 2. Phân tích & nhận xét (Phan tich & nhan xet)
 
-### Tại sao Agent trả lời sai khi dùng Garbage Data?
+### Tại sao Agent trả lời sai khi dùng Garbage Data? (Tai sao Agent tra loi sai khi dung Garbage Data?)
 
 Khi dùng garbage_data.csv, agent trả lời sai vì chất lượng dữ liệu đầu vào không đảm bảo. Duplicate IDs làm cùng một thực thể bị lặp nhiều lần, gây thiên lệch trong thống kê. Wrong data types (giá dạng chữ, số lượng dạng text) khiến quá trình tính toán và sắp xếp bị sai hoặc bỏ qua bản ghi. Outliers như "Nuclear Reactor at $999999" chiếm ưu thế khi model tìm giá trị lớn nhất/điểm cao nhất. Null values làm mất thông tin quan trọng, buộc hệ thống phải đoán thay hoặc bỏ trống, từ đó giảm độ tin cậy của quyết định cuối cùng.
 
